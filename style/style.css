@@ -254,7 +254,7 @@ body.loaded #content {
 
 /* Footer */
 footer {
-    background: #ffffffbc;
+    background: #ffffff51;
     color: #000000;
     padding: 20px 0;
     text-align: center;
@@ -281,3 +281,38 @@ footer {
     text-decoration: none;
 }
 
+.py {
+    font-size: 2em;
+}
+
+.rgb-text {
+    text-shadow: black 1px 1px 3px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    animation: rgbAnimation 2s infinite;
+    background: linear-gradient(90deg, rgb(255, 158, 158), rgb(168, 255, 168), rgb(164, 164, 255), rgb(255, 255, 162));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Keyframes for the RGB animation */
+@keyframes rgbAnimation {
+    0% {
+        color: rgb(255, 172, 172); /* Red */
+    }
+    33% {
+        color: rgb(177, 255, 177); /* Green */
+    }
+
+    48% {
+        color: rgb(255, 177, 252); /* Green */
+    }
+
+    66% {
+        color: rgb(183, 183, 255); /* Blue */
+    }
+    100% {
+        color: rgb(255, 129, 129); /* Red (loop back) */
+    }
+}
